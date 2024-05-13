@@ -93,7 +93,7 @@ main h3 {
   margin-top: 0;
 }
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
   margin-bottom: 0;
 }
 .description {
@@ -141,6 +141,12 @@ main h3 {
 }
 .card a {
   text-decoration: none;
+}
+.gallery h3 {
+  text-align: center;
+}
+.gallery h2 {
+  text-align: center;
 }
 footer {
   color: white;
@@ -191,35 +197,9 @@ footer a:hover {
 .grid-3-columns {
   grid-template-columns: 1fr 1fr 1fr;
 }
-
-@media (max-width: 900px) {
-  header {
-    padding: 60px 0;
-  }
-  header h1 {
-    font-size: 48px;
-  }
-  header h2 {
-    font-size: 24px;
-  }
-  header h3 {
-    font-size: 12px;
-  }
-  .grid {
-    grid-gap: 15px;
-  }
-  .grid-2-columns,
-  .grid-3-columns-first-narow,
-  .grid-3-columns {
-    grid-template-columns: 1fr;
-  }
-  section {
-    padding: 30px;
-  }
-  .img-responsive {
-    display: block;
-    margin: 0 auto;
-  }
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
 }
 @media (max-width: 1250px) {
   section {
@@ -228,9 +208,41 @@ footer a:hover {
   .grid-2-columns {
     grid-template-columns: 1fr;
   }
+  .grid-3-columns {
+    grid-template-columns: 1fr 1fr;
+  }
   .img-responsive {
     display: block;
     margin: 0 auto;
     padding-bottom: 50px;
+  }
+  @media (max-width: 900px) {
+    header {
+      padding: 60px 0;
+    }
+    header h1 {
+      font-size: 48px;
+    }
+    header h2 {
+      font-size: 24px;
+    }
+    header h3 {
+      font-size: 12px;
+    }
+    .grid {
+      grid-gap: 15px;
+    }
+    .grid-2-columns,
+    .grid-3-columns-first-narow,
+    .grid-3-columns {
+      grid-template-columns: 1fr;
+    }
+    section {
+      padding: 30px;
+    }
+    .img-responsive {
+      display: block;
+      margin: 0 auto;
+    }
   }
 }
