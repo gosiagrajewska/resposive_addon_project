@@ -3,10 +3,19 @@
   margin: 0 auto;
 }
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px;
 }
+section.secondary {
+  background: #f8f8f8;
+}
+
+.secondary h2,
+.secondary h3 {
+  text-align: center;
+}
+
 body {
   font-family: Poppins, sans-serif;
   background-color: rgba(39, 32, 68, 1);
@@ -85,9 +94,53 @@ main h3 {
 }
 .img-responsive {
   max-width: 100%;
+  margin-bottom: 0;
 }
 .description {
   text-align: justify;
+}
+.card {
+  background-color: white;
+}
+
+.card h4 {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: left;
+  margin: 0;
+}
+
+.card h5 {
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 19.5px;
+  text-align: left;
+}
+
+.card p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+.card-content {
+  padding: 20px;
+}
+.button {
+  display: block;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 16px 32px 16px 32px;
+  background-color: #462cb2;
+  text-align: center;
+}
+.card a {
+  text-decoration: none;
 }
 footer {
   color: white;
@@ -135,6 +188,9 @@ footer a:hover {
 .grid-3-columns-first-narow {
   grid-template-columns: 2fr 3fr 3fr;
 }
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
 
 @media (max-width: 900px) {
   header {
@@ -153,7 +209,8 @@ footer a:hover {
     grid-gap: 15px;
   }
   .grid-2-columns,
-  .grid-3-columns-first-narow {
+  .grid-3-columns-first-narow,
+  .grid-3-columns {
     grid-template-columns: 1fr;
   }
   section {
